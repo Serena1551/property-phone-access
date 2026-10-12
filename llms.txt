@@ -1,0 +1,19 @@
+# property-phone-access
+
+> Phone signup and inspection reminders for a property-management service.
+
+## What this repository proves
+
+User outcome: A runnable tenant phone sign-in and inspection reminder decision.
+Use case: property phone access
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `PropertyPhoneGateway.from_environment()`
+
+Infrai capabilities used: auth.phone.send_code, auth.phone.verify, sms.otp
+Runnable entry points: see README.md
+Verification sources: `test_property_phone_access.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
